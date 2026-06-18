@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feira de Competições Esportivas</title>
+</head>
+
+<body bgcolor="#0CE863">
+
+
+  <div align="center">
+    <h1>🏆 Feira de Competições Esportivas</h1>
+    <p>Participe das melhores competições esportivas!</p>
+    <h2>Escolha sua modalidade</h2>
+    <hr>
+  </div>
+
+
+  <table width="100%" border="1" bgcolor="white">
+    <tr>
+
+      <td width="25%" valign="top" bgcolor="#0CE863">
+        <h2 align="center">Lista de Modalidades</h2>
+
+        <ul style="list-style-type:none; padding-left:10px;" align="center">
+          <font size="5">
+            <li><a href="#" onclick="mostrar('futsal')">Futsal</a></li>
+            <li><a href="#" onclick="mostrar('handebol')">Handebol</a></li>
+            <li><a href="#" onclick="mostrar('basquete')">Basquete</a></li>
+            <li><a href="#" onclick="mostrar('volei')">Vôlei</a></li>
+            <li><a href="#" onclick="mostrar('futebol')">Futebol</a></li>
+          </font>
+        </ul>
+      </td>
+
+      <td width="75%" valign="top">
+
+        <table width="100%">
+          <tr align="center">
+
+            <td>
+              <h3>Futsal</h3>
+              <img src="/img/futsal.jpg" width="180"><br><br>
+              <a href="formulario.html"><button>INSCREVA-SE</button></a>
+            </td>
+
+            <td>
+              <h3>Handebol</h3>
+              <img src="/img/handebol.jpg" width="180"><br><br>
+              <a href="formulario.html"><button>INSCREVA-SE</button></a>
+            </td>
+
+            <td>
+              <h3>Basquete</h3>
+              <img src="/img/basquete.jpg" width="180"><br><br>
+              <a href="formulario.html"><button>INSCREVA-SE</button></a>
+            </td>
+
+            <td>
+              <h3>Vôlei</h3>
+              <img src="/img/volei.jpg" width="180"><br><br>
+              <a href="formulario.html"><button>INSCREVA-SE</button></a>
+            </td>
+
+            <td>
+              <h3>Futebol</h3>
+              <img src="/img/futebol.jpg" width="180"><br><br>
+              <a href="formulario.html"><button>INSCREVA-SE</button></a>
+            </td>
+
+          </tr>
+        </table>
+
+        <hr>
+
+        <h2 align="center">Informações da Modalidade</h2>
+
+        <div id="futsal" style="display:none;">
+          <h3>⚽ Futsal</h3>
+          <p>
+            Modalidade rápida e dinâmica jogada em quadra.
+            <br><b>Jogadores:</b> 5 por equipe
+            <br><b>Idade:</b> 14 a 35 anos
+            <br><b>Horários:</b> 13:00 e 18:00
+          </p>
+        </div>
+
+        <div id="handebol" style="display:none;">
+          <h3>🤾 Handebol</h3>
+          <p>
+            Esporte de velocidade e estratégia com muitos gols.
+            <br><b>Jogadores:</b> 7 por equipe
+            <br><b>Idade:</b> 15 a 40 anos
+            <br><b>Horários:</b> 14:00 e 19:00
+          </p>
+        </div>
+
+        <div id="basquete" style="display:none;">
+          <h3>🏀 Basquete</h3>
+          <p>
+            Jogo com foco em agilidade e pontuação.
+            <br><b>Jogadores:</b> 5 por equipe
+            <br><b>Idade:</b> 15 a 35 anos
+            <br><b>Horários:</b> 16:00 e 20:00
+          </p>
+        </div>
+
+        <div id="volei" style="display:none;">
+          <h3>🏐 Vôlei</h3>
+          <p>
+            Trabalho em equipe e estratégia.
+            <br><b>Jogadores:</b> 6 por equipe
+            <br><b>Idade:</b> 14 a 35 anos
+            <br><b>Horários:</b> 15:00 e 18:30
+          </p>
+        </div>
+
+        <div id="futebol" style="display:none;">
+          <h3>⚽ Futebol</h3>
+          <p>
+            O esporte mais popular do mundo.
+            <br><b>Jogadores:</b> 11 por equipe
+            <br><b>Idade:</b> 16 a 40 anos
+            <br><b>Horários:</b> 17:00 e 20:00
+          </p>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2 align="center">Garanta sua vaga agora!</h2>
+
+  <p align="center">
+    <a href="formulario.html">
+      <button>IR PARA INSCRIÇÃO</button>
+    </a>
+  </p>
+
+  <script>
+    function mostrar(modalidade) {
+
+      var lista = ['futsal', 'handebol', 'basquete', 'volei', 'futebol'];
+
+      for (var i = 0; i < lista.length; i++) {
+        document.getElementById(lista[i]).style.display = 'none';
+      }
+
+      var elemento = document.getElementById(modalidade);
+      elemento.style.display = 'block';
+
+      elemento.style.opacity = 0;
+
+      var op = 0;
+      var anim = setInterval(function () {
+        if (op >= 1) {
+          clearInterval(anim);
+        }
+        elemento.style.opacity = op;
+        op += 0.1;
+      }, 40);
+    }
+  </script>
+
+</body>
+
+</html>

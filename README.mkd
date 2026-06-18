@@ -1,0 +1,124 @@
+# Página Academia
+
+Projeto desenvolvido para cadastro de participantes em uma competição esportiva utilizando HTML, CSS, PHP e MySQL.
+
+## Funcionalidades
+
+- Cadastro de participantes
+- Armazenamento dos dados em banco de dados MySQL
+- Página de conclusão após o cadastro
+- Geração de comprovante em PDF utilizando FPDF
+- Layout responsivo com HTML e CSS
+
+## Estrutura do Projeto
+
+```text
+PAGINAACADEMIA/
+
+├── guiabancodedados/
+│   └── formulariosite.sql
+
+├── fpdf19/
+
+├── img/
+│   ├── Basquete.jpg
+│   ├── Futebol.jpg
+│   ├── Futsal.jpg
+│   ├── Handebol.jpg
+│   ├── Volei.jpg
+│   └── img_rodape.jpg
+
+├── cabecalho_pg3.html
+├── carrossel.html
+├── comprovante.php
+├── conexao.php
+├── conteudo_pg3.php
+├── formulario.html
+├── paginaPrin.html
+├── pg-Conclusao.php
+├── rodape_pg3.html
+├── salvar.php
+└── style.css
+```
+
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- PHP
+- MySQL
+- XAMPP
+- FPDF
+
+## Requisitos
+
+- XAMPP
+- PHP 8 ou superior
+- MySQL
+- Navegador Web
+
+## Configuração do Banco de Dados
+
+1. Inicie o Apache e o MySQL pelo XAMPP.
+  -configure para a porta 3007.
+
+2. Acesse o phpMyAdmin:
+
+```text
+http://localhost/phpmyadmin
+```
+
+3. Clique na opção **Importar**.
+
+4. Selecione o arquivo:
+
+```text
+PaginaAcademia/guiabancodedados/formulariosite.sql
+```
+
+5. Clique em **Executar**.
+
+O banco de dados `formulariosite` e todas as tabelas serão criados automaticamente.
+
+Caso necessário, ajuste as configurações de conexão no arquivo `conexao.php`.
+
+## Como Executar
+
+1. Copie a pasta `PaginaAcademia` para:
+
+```text
+C:\xampp\htdocs\
+```
+
+2. Inicie o Apache e o MySQL pelo XAMPP.
+
+3. Acesse no navegador:
+
+```text
+http://localhost/PaginaAcademia/paginaPrin.html
+```
+
+## Banco de Dados
+
+Tabela principal:
+
+- inscricao_participante
+
+Campos:
+
+- nome
+- email
+- telefone
+- nascimento
+- genero
+- rua
+- cidade
+- estado
+- cep
+- altura
+- peso
+- atividade
+
+## Autor
+
+Elionilson Viana

@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Feira de Competições Esportivas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#0CE863">
-
+<body>
 
   <div align="center">
     <h1>🏆 Feira de Competições Esportivas</h1>
@@ -16,21 +16,18 @@
     <hr>
   </div>
 
-
-  <table width="100%" border="1" bgcolor="white">
+  <table width="100%" border="1">
     <tr>
 
-      <td width="25%" valign="top" bgcolor="#0CE863">
+      <td width="25%" valign="top" class="menu-lateral">
         <h2 align="center">Lista de Modalidades</h2>
 
-        <ul style="list-style-type:none; padding-left:10px;" align="center">
-          <font size="5">
-            <li><a href="#" onclick="mostrar('futsal')">Futsal</a></li>
-            <li><a href="#" onclick="mostrar('handebol')">Handebol</a></li>
-            <li><a href="#" onclick="mostrar('basquete')">Basquete</a></li>
-            <li><a href="#" onclick="mostrar('volei')">Vôlei</a></li>
-            <li><a href="#" onclick="mostrar('futebol')">Futebol</a></li>
-          </font>
+        <ul>
+          <li><a href="#" onclick="mostrar('futsal')">Futsal</a></li>
+          <li><a href="#" onclick="mostrar('handebol')">Handebol</a></li>
+          <li><a href="#" onclick="mostrar('basquete')">Basquete</a></li>
+          <li><a href="#" onclick="mostrar('volei')">Vôlei</a></li>
+          <li><a href="#" onclick="mostrar('futebol')">Futebol</a></li>
         </ul>
       </td>
 
@@ -76,7 +73,7 @@
 
         <h2 align="center">Informações da Modalidade</h2>
 
-        <div id="futsal" style="display:none;">
+        <div id="futsal">
           <h3>⚽ Futsal</h3>
           <p>
             Modalidade rápida e dinâmica jogada em quadra.
@@ -86,7 +83,7 @@
           </p>
         </div>
 
-        <div id="handebol" style="display:none;">
+        <div id="handebol">
           <h3>🤾 Handebol</h3>
           <p>
             Esporte de velocidade e estratégia com muitos gols.
@@ -96,7 +93,7 @@
           </p>
         </div>
 
-        <div id="basquete" style="display:none;">
+        <div id="basquete">
           <h3>🏀 Basquete</h3>
           <p>
             Jogo com foco em agilidade e pontuação.
@@ -106,7 +103,7 @@
           </p>
         </div>
 
-        <div id="volei" style="display:none;">
+        <div id="volei">
           <h3>🏐 Vôlei</h3>
           <p>
             Trabalho em equipe e estratégia.
@@ -116,7 +113,7 @@
           </p>
         </div>
 
-        <div id="futebol" style="display:none;">
+        <div id="futebol">
           <h3>⚽ Futebol</h3>
           <p>
             O esporte mais popular do mundo.

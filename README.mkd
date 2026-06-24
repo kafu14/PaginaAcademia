@@ -57,6 +57,62 @@ PAGINAACADEMIA/
 - MySQL
 - Navegador Web
 
+## Como Baixar o Projeto
+
+Para baixar uma cópia deste projeto para o seu computador, siga os passos abaixo:
+
+### 1. Abra o terminal
+
+No Windows, você pode utilizar o **Git Bash**, **Prompt de Comando (CMD)** ou **PowerShell**.
+
+### 2. Navegue até a pasta onde deseja salvar o projeto
+
+Exemplo:
+
+```bash
+cd Documentos/Projetos
+```
+
+### 3. Clone o repositório
+
+Execute o comando abaixo:
+
+```bash
+git clone https://github.com/kafu14/PaginaAcademia.git
+```
+
+O comando `git clone` cria uma cópia completa do repositório em sua máquina local.
+
+### 4. Acesse a pasta do projeto
+
+```bash
+cd PaginaAcademia
+```
+
+### 5. Abra o projeto
+
+Agora basta abrir a pasta do projeto em sua IDE ou editor de código preferido, como:
+
+* Visual Studio Code
+* Visual Studio
+* Sublime Text
+* IntelliJ IDEA
+
+### 6. Executar o projeto
+
+Caso seja um projeto apenas com HTML, CSS e JavaScript, abra o arquivo `index.html` no navegador ou utilize a extensão **Live Server** do VS Code para uma melhor experiência.
+
+## Atualizando o projeto
+
+Se você já possui o projeto baixado e deseja obter as alterações mais recentes do repositório, execute:
+
+```bash
+git pull
+```
+
+Esse comando sincroniza sua cópia local com a versão mais recente disponível no GitHub.
+
+
 ## Configuração do Banco de Dados
 
 1. Inicie o Apache e o MySQL pelo XAMPP.
